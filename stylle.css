@@ -1,0 +1,176 @@
+@charset 'utf-8';
+
+@font-face {
+    font-family: font;
+    src: url(riffic/RifficFree-Bold.ttf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: sans-serif;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    background-color: rgb(24, 111, 101);
+}
+h1{
+    text-align: center;
+    font-family: font;
+ }
+
+ h2{
+    font-weight: 800;
+    color: rgb(0, 0, 0)e2e;
+    text-transform: uppercase; 
+}
+
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+main{
+    display: block;
+    background: rgb(181, 203, 153)
+}
+
+.container{
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 25px;
+    animation: severino 2s ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0 cover 40%;
+
+}
+
+section.modulo p{
+    margin-bottom: 30px;
+    text-align: justify;
+    font-size: 1.3em;
+}
+
+section.modulo h2{
+    margin-bottom: 30px;
+    font-size: 30px;
+    letter-spacing: .5em;
+    text-align: center;
+   
+}
+
+section.modulo.content{
+    padding: 40px 0;
+    background: rgb(252, 224, 155);
+}
+
+section.modulo.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-position: 58% 58%;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+}
+
+section.modulo.parallax h1{
+    color: rgb(32, 32, 32) ;
+    text-shadow: 7px 7px 7px rgb(255, 240, 240);
+    text-align: center;
+    font-size: 75px;
+    z-index: 100;
+}
+
+section.modulo.parallax::after{ 
+    content:"";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    background: linear-gradient(to bottom,rgba(0,0,0,0)0, rgba(0,0,0,0) 30%, #000000 100% ) ;
+
+}
+
+section.modulo.parallax-1{
+    background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsqrm_HR1Kk4g66us0qDTYwAWFPrarqItno1H3B9fvSkl1P2WEJ70_JgqNoq8zW-ZI-6mT6X2Wf-YAkzKkgSAdie3fDORnm92dPWyxJew21hXZ55k10Vk4ZRBxz13Txn64dpnwsHZZC48XuXdi3yon0PdydU6DZzUCqQiuU_M7lwCFPOnRvGY9x1DN/s1920/Consci%C3%AAncia%20Negra.jpg");
+}
+section.modulo.parallax-2{
+    background-image: url("https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2022/11/consciencia_negra_materia_p01-copia-2.png");
+}
+section.modulo.parallax-3{
+    background-image: url("https://www.radiouniversitariafm.com.br/wp-content/uploads/2021/11/RACISMO-CURSO.jpg");
+}
+
+section.modulo.parallax-4{
+    background-image: url("https://mundonegro.inf.br/wp-content/uploads/2020/01/twg_consciencia_entre_urgencias_hero_1-min-768x360.png");
+}
+
+section.modulo.parallax-5{
+    background-image: url("https://jornalggn.com.br/wp-content/uploads/2023/11/consciencia-negra-fotomontagem-jornal-da-usp-com-imagens-PRIP-USP-e-Freepik-1280x720.jpg");
+}
+
+section.modulo.parallax-6{
+    background-image: url("https://static.vecteezy.com/ti/vetor-gratis/p3/12743680-dia-da-consciencia-negra-ilustracao-de-banner-com-mulheres-vetor.jpg");
+}
+
+section.modulo.parallax-7{
+    background-image: url("https://www.fashionbubbles.com/wp-content/uploads/2021/11/dia_da_consciencia_negra-1-scaled.jpg");
+}
+
+
+
+
+
+@keyframes severino {
+        from{
+            translate: -100vw 0;
+            color: rgb(73, 52, 7);
+            opacity: 0;
+        }
+
+        to{
+            translate: 0 0;
+            color:  rgb(7, 73, 7);
+            opacity: 1;
+        }
+    }
+
+    @media all and (max-width: 860px) {
+
+        section.modulo.parallax h1{
+            color: #ffffff;
+            text-shadow: 5px 5px 7px rgb(0, 0, 0, 0.614);
+            text-align: center;
+            font-size: 2.5em;
+            z-index: 100;
+        }
+
+        section.modulo p{
+            margin-bottom: 10px;
+            text-align: center;
+            font-size: 1em;
+        }
+
+        section.modulo.content{
+            width: 90%;
+
+        }
+
+        section.modulo h2{
+            margin-bottom: 30px;
+            font-size: 15px;
+            text-align: center;
+        }
+
+        section.modulo.parallax-1{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYANjV4r4JqwEpFI3dXWPK4v6nBRyH62QW4Q&usqp=CAU);
+        }
+
+    }
